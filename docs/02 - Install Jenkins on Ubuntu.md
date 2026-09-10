@@ -46,3 +46,8 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 Open Jenkins on port `8080` and complete the initial setup.
 
 > If Jenkins is exposed through Cloudflare Tunnel, do not expose Jenkins unnecessarily through a public firewall rule. Keep the tunnel configuration separate from the private agent network.
+
+---
+
+## Official References
+- Jenkins install: https://www.jenkins.io/doc/book/installing/linux/
