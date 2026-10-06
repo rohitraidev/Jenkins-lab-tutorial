@@ -3,7 +3,7 @@
 
 **Temporary Static Node Addition**
 
-
+```
 curl -sO http://192.168.50.128:8080/jnlpJars/agent.jar
 
 java -jar agent.jar \
@@ -12,12 +12,13 @@ java -jar agent.jar \
 -name "jenkins-agent-jnlp" \
 -webSocket \
 -workDir "/home/rohit/agent"
-
+```
 -----------------------------------------------------
 
 
 **Permanent Static Agent: Background Method**
 
+```
 curl -sO http://192.168.50.128:8080/jnlpJars/agent.jar
 
 nohup java -jar agent.jar \
@@ -27,7 +28,7 @@ nohup java -jar agent.jar \
 -webSocket \
 -workDir "/home/rohit/agent" \
 > agent.log 2>&1 &
-
+```
 
 
 -----------------------------------------------------
@@ -35,6 +36,7 @@ nohup java -jar agent.jar \
 
 **Permanent Static Agent: systemd Method**
 
+```
 sudo -i 
 /etc/jenkins-agent.env
 JENKINS_SECRET=<60c974033373e....>
@@ -71,3 +73,4 @@ systemctl restart jenkins-agent
 
 systemctl status jenkins-agent
 journalctl -u jenkins-agent -f
+```
