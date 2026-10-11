@@ -516,7 +516,7 @@ Verbose SSH output can contain usernames, hostnames, paths, and other environmen
 - **Review account and file permissions.** Ensure that only the intended account and privileged administrators can read private keys and modify authorized keys.
 - **Rotate credentials carefully.** Update the Jenkins credential and agent authorization when rotating the key pair.
 
-## 12. What You Learned
+## 12. What we Learned
 
 By completing this lab, you have:
 
